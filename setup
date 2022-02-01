@@ -13,6 +13,5 @@ kubeadm version
 
 # Launch Kubernetes
 sudo swapoff –a # Apparently this is important, source https://phoenixnap.com/kb/install-kubernetes-on-ubuntu
-hostnamectl set-hostname node # Set our hostname to 'node'
 kubeadm init --pod-network-cidr=10.0.0.0/24 # Instantiate our pod network
 mkdir -p $HOME/.kube
